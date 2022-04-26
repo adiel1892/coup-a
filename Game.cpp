@@ -14,3 +14,7 @@ vector<string> Game::players(){
 string Game::winner(){
     return "coup-a";
 }
+
+// void Game::addPlayer(Player *player){
+
+// }

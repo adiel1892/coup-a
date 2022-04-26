@@ -2,6 +2,7 @@
 using namespace coup;
 
 Player::Player(){
+    this->wage = 0;
 
 }
 

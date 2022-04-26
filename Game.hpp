@@ -1,7 +1,9 @@
 #pragma once
 #include <string>
 #include <vector>
+// #include "Player.hpp"
 using namespace std;
+
 namespace coup{
     class Game{
         public:
@@ -10,5 +12,6 @@ namespace coup{
             string turn();
             vector<string> players();
             string winner();
+            // void addPlayer(Player *player);
     };
 }

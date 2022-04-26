@@ -1,6 +1,6 @@
 #include "Duke.hpp"
 using namespace coup;
-Duke::Duke(Game game , string name){
+Duke::Duke(Game game , string const &name){
 
 }
 

@@ -1,6 +1,6 @@
 #include "Assassin.hpp"
 using namespace coup;
 
-Assassin::Assassin(Game game , string name){
+Assassin::Assassin(Game game , string const &name){
 
 }
