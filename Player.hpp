@@ -1,7 +1,9 @@
+#pragma once
 #include "Game.hpp"
 namespace coup{
     class Player{
         public:
+            Player();
             int wage;
             int coins();
             string role();
