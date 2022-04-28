@@ -1,17 +1,20 @@
+
 #pragma once
 #include <string>
 #include <vector>
-// #include "Player.hpp"
+#include "Player.hpp"
+constexpr int maxPlayers = 6;
 using namespace std;
-
 namespace coup{
+    class Player;
     class Game{
         public:
-            vector<string>* currPlayers;
+            vector<Player>* currPlayers = new vector<Player>[maxPlayers];;
             Game();
-            string turn();
-            vector<string> players();
-            string winner();
-            // void addPlayer(Player *player);
+            // int currTurn;
+            static string turn();
+            static vector<string> players();
+            static string winner();
+            void addPlayer(Player *player)const;
     };
 }

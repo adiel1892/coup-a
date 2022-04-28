@@ -2,7 +2,7 @@
 using namespace coup;
 
 Player::Player(){
-    this->wage = 0;
+    // this->wage = 0;
 
 }
 
@@ -18,6 +18,6 @@ void Player::income(){
 void Player::foreign_aid(){
 
 }
-void Player::coup(Player other){
+void Player::coup(Player const & other){
 
 }

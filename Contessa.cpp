@@ -4,6 +4,6 @@ using namespace coup;
 Contessa::Contessa(Game game , string const &name){
 
 }
-void Contessa::block(Player other){
+void Contessa::block(Player const & other){
 
 }

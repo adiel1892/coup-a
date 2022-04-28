@@ -24,7 +24,34 @@ TEST_CASE("game 1"){
     CHECK(players.at(3) == "Reut");
     CHECK(players.at(4) == "Gilad");
     CHECK(game_1.turn() == "Moshe");
-    
+
+    CHECK(duke.wage == 0);
+    duke.income();
+    CHECK(duke.wage == 1);
+
+    CHECK(assassin.wage == 0);
+    assassin.income();
+    CHECK(assassin.wage == 1);
+
+    CHECK(ambassador.wage == 0);
+    ambassador.income();
+    CHECK(ambassador.wage == 1);
+
+    CHECK(captain.wage == 0);
+    captain.income();
+    CHECK(captain.wage == 1);
+
+    CHECK(contessa.wage == 0);
+    contessa.income();
+    CHECK(contessa.wage == 1);
+    contessa.income();
+    CHECK(contessa.wage == 2);
+
+    CHECK_THROWS(duke.coup(contessa));
+    CHECK_THROWS(captain.coup(contessa));
+    CHECK_THROWS(assassin.coup(contessa));
+    CHECK_THROWS(ambassador.coup(contessa));
+    CHECK_THROWS(contessa.coup(duke));
 
 
 }

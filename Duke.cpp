@@ -4,7 +4,7 @@ Duke::Duke(Game game , string const &name){
 
 }
 
-void Duke::block(Player other){
+void Duke::block(Player const & other){
 
 }
 

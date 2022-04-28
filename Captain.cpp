@@ -4,10 +4,10 @@ using namespace coup;
 Captain::Captain(Game game , string const &name){
 
 }
-void Captain::block(Player other){
+void Captain::block(Player const & other){
 
 }
 
-void Captain::steal(Player other){
+void Captain::steal(Player const & other){
     
 }
